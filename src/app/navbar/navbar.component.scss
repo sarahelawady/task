@@ -1,0 +1,45 @@
+#mainNavBar
+{
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+    background-color: #8b8b8b !important;
+    color: white !important;
+    font-size: 80%;
+    padding: 0.8rem;
+
+}
+.navbar-dark .navbar-nav {
+    color: rgba(255,255,255) !important;
+}
+
+.navbar-dark .navbar-toggler
+{
+    color: rgba(255,255,255);
+    border-color: rgba(255,255,255,.1);
+    background-color: #fe1060 !important;
+    font-size: 12.8px;
+    padding: 0.8rem;
+    font-weight: 700;
+}
+
+.navbar-brand
+{
+    font-size: 24px !important;
+}
+.nav-link
+{
+    font-size: 16px !important;
+    color: rgba(255,255,255) !important
+}
+.nav-link:hover
+{
+    color: #fe1060 !important;
+}
+.route-class ,.dropdown-item:hover
+{
+    background-color: #fe1060;
+}
+.route-class:hover
+{
+    color: rgba(255,255,255) !important;
+}
