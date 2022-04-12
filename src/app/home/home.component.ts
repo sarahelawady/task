@@ -11,15 +11,15 @@ export class HomeComponent implements OnInit {
 
   products:any[]=[];
   appear:number = 999;
-  imgpref:string = 'https://image.tmdb.org/t/p/w500';
+  
   constructor(private _StoreService:StoreService) { }
 
   ngOnInit(): void {
     this._StoreService.getProduct().subscribe((response)=>{
 
-      console.log(response.results);
+      console.log(response);
 
-      this.products = response.results;
+      this.products = response;
 
     })
   }
