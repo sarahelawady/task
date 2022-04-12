@@ -8,6 +8,8 @@
 .image
 {
   height: 124px ;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .price
 {
@@ -18,4 +20,31 @@
 {
   height: 50px;
   overflow-y:hidden;
+}
+.vat
+{
+  color: #591FF8;
+  font-size: 12px;
+
+}
+.icn
+{
+  width: 30px;
+  height: 30px;
+  border-radius: 90px;
+  background-color: #F4F4F4;
+  top: 5px;
+  right: 30px;
+}
+.icn:hover
+{
+  cursor: pointer;
+}
+
+.menu1
+{
+  top: 5px;
+  right: 65px;
+  background-color: #fff;
+  display: none;
 }

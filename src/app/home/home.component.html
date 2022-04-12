@@ -1,18 +1,27 @@
 <div class="container my-3">
   <div class=" row">
-    <div *ngFor="let product of products" class="col-2" >
-      <div class="movie" >
-        <div class="image">
-          <img [src]="imgpref+product.poster_path"  class=" w-100 h-100" alt="...">
+    <div *ngFor="let product of products; let i = index" class="col-2" >
+      <div class="movie px-4 my-3 position-relative " >
+        <div class="image overflow-hidden ">
+          <img [src]="imgpref+product.poster_path"  class=" w-100 h-100 " alt="...">
         </div>
 
-        <div class="my-3">
+
           <h5 class="title">{{product.title}}</h5>
 
 
           <a href="#" class="price  text-start py-1 px-2 rounded-2 text-">$ 25</a>
+          <span class="vat mx-2 ">incl. VAT</span>
+          <div (click)="menuClick(i)" class="icn position-absolute ">
+            <i class="fa-solid fa-sliders p-2 "></i>
+          </div>
+
+          <div id="{{'menu' + i}}" class="p-2 rounded-2 position-absolute menu1">
+            <app-menu></app-menu>
+          </div>
+
+
         </div>
-      </div>
     </div>
   </div>
 </div>
